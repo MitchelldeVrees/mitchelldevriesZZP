@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mitchell de Vries | Services</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="container site-nav">
+        <a class="brand" href="./index.html" aria-label="Home">
+          <span class="brand-mark">+</span>
+          <span class="brand-text">Mitchell de Vries</span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a class="nav-link" href="./index.html">Work</a>
+          <a class="nav-link active" href="./services.html">Services</a>
+          <a class="nav-link" href="./contact.html">Contact</a>
+        </nav>
+      </header>
+
+      <div class="divider"></div>
+
+      <main>
+        <section class="container services-hero">
+          <div class="mono-label">
+            <span class="plus">+</span>
+            <span>Services</span>
+          </div>
+          <h1>What I build</h1>
+          <p>
+            End-to-end development from idea to production. Specializing in web
+            apps, AI integrations, and tech strategy.
+          </p>
+        </section>
+
+        <section class="service-stack">
+          <article class="service-row">
+            <div class="service-copy">
+              <span class="service-num">01</span>
+              <h2 class="service-title">Web &amp; App
+Development</h2>
+              <p class="service-desc">
+                Full-stack web applications built with Next.js, TypeScript, and modern
+                tooling. From landing pages to complex SaaS products — fast,
+                accessible, and scalable.
+              </p>
+              <a href="./contact.html" class="service-link">Start a project <span>→</span></a>
+            </div>
+
+            <div class="service-panel panel-purple">
+              <div class="badge-column">
+                <span class="tech-badge">Next.js 14</span>
+                <span class="tech-badge" style="color:var(--accent-blue)">TypeScript</span>
+                <span class="tech-badge">Tailwind CSS</span>
+                <span class="tech-badge">PostgreSQL</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-row reverse">
+            <div class="service-panel panel-indigo">
+              <div class="code-snippet">
+                <span style="color:var(--text-muted)">const response = await anthropic</span>
+                <span style="color:var(--text-muted)">  .messages.create({</span>
+                <span style="color:var(--accent)">  model: 'claude-3-5-sonnet',</span>
+                <span style="color:var(--text-secondary)">  max_tokens: 4096,</span>
+                <span style="color:var(--text-secondary)">  messages: [{ role: 'user',</span>
+                <span style="color:var(--text-secondary)">    content: userInput }]</span>
+                <span style="color:var(--text-muted)">  })</span>
+              </div>
+            </div>
+
+            <div class="service-copy">
+              <span class="service-num">02</span>
+              <h2 class="service-title">AI
+Integrations</h2>
+              <p class="service-desc">
+                Bring intelligence to your product. LLM-powered features, RAG pipelines,
+                semantic search, and custom AI workflows using Claude, OpenAI,
+                and open-source models.
+              </p>
+              <a href="./contact.html" class="service-link">Explore AI options <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="service-row">
+            <div class="service-copy">
+              <span class="service-num">03</span>
+              <h2 class="service-title">Tech
+Consulting</h2>
+              <p class="service-desc">
+                Architecture reviews, team mentoring, and strategic guidance.
+                Help your team move faster with the right stack, processes, and
+                tooling decisions.
+              </p>
+              <a href="./contact.html" class="service-link">Book a call <span>→</span></a>
+            </div>
+
+            <div class="service-panel panel-green">
+              <div class="consult-list">
+                <div class="consult-item"><span class="plus">+</span>Architecture Review</div>
+                <div class="consult-item"><span class="plus">+</span>Tech Stack Selection</div>
+                <div class="consult-item"><span class="plus">+</span>Team Mentoring</div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <div class="divider"></div>
+
+      <footer class="container footer">
+        <div class="brand">
+          <span class="brand-mark" style="font-size:16px">+</span>
+          <span style="font-size:14px;font-weight:500">Mitchell de Vries</span>
+        </div>
+        <span class="footer-note">© 2026 · Based in the Netherlands</span>
+      </footer>
+    </div>
+  </body>
+</html>
