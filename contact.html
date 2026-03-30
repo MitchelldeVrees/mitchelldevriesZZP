@@ -33,27 +33,27 @@
 
           <p>
             I'm Mitchell — a software engineer based in the Netherlands.
-            Available for freelance, consulting, and full-time roles.
+            Available for freelance, consulting, and part-time roles.
           </p>
 
           <div class="info-stack">
             <div class="info-row">
               <span class="label">Email</span>
-              <span class="value">mitchell@devries.dev</span>
+              <span class="value">mitchelldevries2001@gmail.com</span>
             </div>
             <div class="info-row">
               <span class="label">Location</span>
-              <span class="value">Netherlands — open to remote</span>
+              <span class="value">Netherlands - Alkmaar — open to remote</span>
             </div>
             <div class="info-row">
               <span class="label">LinkedIn</span>
-              <a class="value link" href="https://linkedin.com/in/mitchelldevries">linkedin.com/in/mitchelldevries</a>
+              <a class="value link" href="https://www.linkedin.com/in/mitchelldev/">linkedin.com/in/mitchelldev</a>
             </div>
           </div>
         </section>
 
         <section class="contact-form-wrap">
-          <form class="contact-form" action="#" method="post">
+          <form class="contact-form" id="contact-form" action="#" method="post" novalidate>
             <h2>Send a message</h2>
 
             <div class="form-row">
@@ -77,6 +77,8 @@
               <textarea class="textarea" id="message" name="message" placeholder="Tell me about your project, timeline, and budget..."></textarea>
             </div>
 
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+
             <div class="form-footer">
               <span class="form-note">Usually responds within 24 hours</span>
               <button class="btn btn-primary" type="submit">Send message</button>
@@ -95,5 +97,6 @@
         <span class="footer-note">© 2026 · Based in the Netherlands</span>
       </footer>
     </div>
+    <script src="./contact.js"></script>
   </body>
 </html>

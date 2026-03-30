@@ -1,0 +1,18 @@
+{
+  "name": "mitchelldevrieszzp",
+  "version": "1.0.0",
+  "description": "Portfolio website with contact form email delivery and captcha protection.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "nodemailer": "^8.0.4"
+  }
+}
