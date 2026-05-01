@@ -5,9 +5,9 @@
       badgeText: "Research / Banking",
       badgeStyle: "background:#10B98115;color:#10B981",
       what:
-        "This is a research study focused on alert fatigue in fraud monitoring operations. It maps where false positives consume analyst time and proposes practical improvements in prioritization, triage flow, and model feedback loops.",
+        "A research paper examining how false-positive fraud alerts overwhelm compliance teams and degrade detection quality. Covers the operational cost of alert fatigue, compares ML and rule-based approaches used at large banks, and proposes concrete tuning strategies to cut noise without increasing missed fraud.",
       why:
-        "I made this to understand a high-impact real-world banking problem from first principles. Instead of jumping straight into code, I wanted to validate where process and decision quality break down before suggesting technical interventions.",
+        "Fraud ops at large banks face thousands of alerts per day — most are false positives. I wanted to understand where the line actually sits between catching real fraud and drowning analysts in noise, and whether modern ML approaches meaningfully solve it or just shift the failure mode.",
       preview: {
         type: "image",
         src: "./images/generated-1774894526901.png",
@@ -20,12 +20,12 @@
     },
     "f1-api": {
       title: "F1 Live API",
-      badgeText: "API / TypeScript",
+      badgeText: "API / Real-time Data",
       badgeStyle: "background:#3B82F615;color:#3B82F6",
       what:
-        "A real-time Formula 1 data platform that ingests race telemetry and exposes low-latency endpoints for standings, lap deltas, and event timelines. Designed for dashboard and companion-app integrations.",
+        "Low-latency API serving live F1 race data — lap times, gaps, tire strategy, standings — from ingestion through websocket delivery, with a cache layer for replay queries. Built in TypeScript.",
       why:
-        "I built this to practice event-driven API design under high update frequency and to create something genuinely fun for motorsport fans while keeping the architecture production-oriented.",
+        "Wanted to build a real-time data system end-to-end. F1 was the excuse — but the architecture is essentially the same as a market data feed, which is why it doubles as a reference for trading-adjacent work.",
       preview: {
         type: "image",
         src: "./images/generated-1774894357879.png",
@@ -38,12 +38,12 @@
     },
     luisterslim: {
       title: "Luisterslim",
-      badgeText: "AI / Audio",
+      badgeText: "AI / Education",
       badgeStyle: "background:#A855F715;color:#A855F7",
       what:
-        "An AI-assisted reading comprehension tool for Dutch primary education. It combines listening exercises with adaptive prompts so students can practice understanding, summarization, and vocabulary in one flow.",
+        "Generates reading passages in Dutch at a company's current level, asks comprehension questions, and adapts difficulty based on responses. LLM-based passage generation with an adaptive difficulty engine.",
       why:
-        "I wanted to build something with educational impact and explore how AI can support learning outcomes without replacing teachers. The focus was accessibility, clarity, and measurable progress signals.",
+        "There are multiple transcription websites. But most are not clear what they do with your data. So I wanted to create my own application with a local AI model where I know 100% that I own the data and the AI model is running locally on a server at home.",
       preview: {
         type: "image",
         src: "./images/luisterslim.png",
@@ -59,9 +59,9 @@
       badgeText: "Fintech / Node.js",
       badgeStyle: "background:#F59E0B15;color:#F59E0B",
       what:
-        "A currency-monitoring system that tracks FX rates and triggers custom alerts by threshold and trend. It supports side-by-side source comparison so users can react to real movement, not noise.",
+        "Tracks savings and deposit rates across major banks, normalizes them into a single comparison view, and alerts when rates change or better offers appear. Node.js scraping pipeline, PostgreSQL, notification layer.",
       why:
-        "I made this to solve a personal pain point around manual rate tracking and to build a robust alerting pipeline where signal quality and timing matter more than raw data volume.",
+        "Consumer rates change constantly but are scattered across a dozen bank sites. I wanted one dashboard telling me when to move money — and the scraping and normalization problem was the technically interesting part.",
       preview: {
         type: "image",
         src: "./images/renteoverzicht.png",
@@ -77,9 +77,9 @@
       badgeText: "AI / Legal Tech",
       badgeStyle: "background:#A855F715;color:#A855F7",
       what:
-        "A contract analysis assistant that extracts clause types, flags potential risk areas, and returns structured summaries for legal review. Built to reduce repetitive first-pass document screening.",
+        "Ingests contracts, extracts key clauses (term, liability, termination, IP), flags non-standard language, and produces a structured summary for review. RAG pipeline with embeddings over a clause library plus LLM-based extraction and comparison.",
       why:
-        "I built this to validate how LLMs can accelerate legal workflows while still keeping humans in control for final decisions. The objective was time reduction without loss of confidence.",
+        "Contract review is one of the few white-collar tasks where LLMs can genuinely save hours per document — but most tools over-promise and hallucinate. I wanted to see how tight I could make the extraction-plus-verification loop with retrieval grounding.",
       preview: {
         type: "image",
         src: "./images/zaakwijzer.png",
@@ -90,28 +90,14 @@
         label: "Open website"
       }
     },
-    "inventory-system": {
-      title: "inventorySystem",
-      badgeText: "SaaS / TypeScript",
-      badgeStyle: "background:#3B82F615;color:#3B82F6",
-      what:
-        "A simple stock app to keep track of what is still in the kitchen.",
-      why:
-        "I made this for my girlfriend so she could track groente, vlees en kruiden at home.",
-      preview: {
-        type: "image",
-        src: "./images/generated-1774894504775.png",
-        alt: "inventory system preview"
-      }
-    },
     "portify-finance": {
       title: "Portify Finance",
       badgeText: "Finance / Product",
       badgeStyle: "background:#3B82F615;color:#3B82F6",
       what:
-        "A finance product focused on portfolio visibility, performance tracking, and clearer investment decisions from one dashboard-style experience.",
+        "Aggregates positions across brokers, tracks performance against benchmarks, and surfaces cost basis, dividends, and currency impact. Built to give individual investors the clarity that professional desks take for granted.",
       why:
-        "I added this project because modern personal finance tools should feel as intuitive as product-led SaaS, and I like building experiences that simplify complex numbers.",
+        "Working at a broker, I kept noticing the gap between the tooling professionals have and what retail investors actually see in their apps. Portify is an attempt to close part of that gap.",
       preview: {
         type: "image",
         src: "./images/portify.png",

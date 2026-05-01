@@ -6,6 +6,20 @@
 
   const submitButton = form.querySelector('button[type="submit"]');
   const statusEl = document.getElementById("form-status");
+  const subjectInput = document.getElementById("subject");
+  const messageInput = document.getElementById("message");
+
+  const params = new URLSearchParams(window.location.search);
+  const presetSubject = String(params.get("subject") || "").trim();
+  const presetMessage = String(params.get("message") || "").trim();
+
+  if (subjectInput && presetSubject && !subjectInput.value.trim()) {
+    subjectInput.value = presetSubject;
+  }
+
+  if (messageInput && presetMessage && !messageInput.value.trim()) {
+    messageInput.value = presetMessage;
+  }
 
   function setStatus(message, tone) {
     if (!statusEl) {
