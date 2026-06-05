@@ -116,6 +116,11 @@ app.post("/api/contact", async function (req, res) {
   }
 });
 
+// Keep the full paper private; only the 7-page preview PDF is public.
+app.use(/^\/brokerage_and_ai\.pdf\/?$/i, function (_req, res) {
+  return res.status(404).end();
+});
+
 app.use(express.static(path.join(__dirname), { extensions: ["html"] }));
 
 app.listen(port, function () {
